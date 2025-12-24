@@ -1,0 +1,110 @@
+BANGRUI FANG
+fangbangrui@gmail.com | 6478331813 | North York, ON M2R 2P3 | WWW: https://bangruifang.com/ |
+WWW: https://github.com/fangbangru
+
+Highlights of Qualifications
+Second-year Computer Science student at McMaster University with a strong foundation in programming and software
+design.
+Proficient in Java, with hands-on experience implementing algorithms, data structures, and object-oriented designs, such as
+Data Structures and Algorithms and Introduction to Software Development.
+Experienced in relational databases and SQL through databases, including basic schema design and data querying using
+MySQL.
+Familiar with software engineering practices such as requirements engineering, software modeling, design patterns,
+architectural design, and implementation & testing.
+Strong interest in software and mobile development, actively applying course concepts to real-world projects and
+internships.
+
+Skills
+Python
+
+MATLAB
+
+Java/JS
+
+Haskell
+
+C++/C
+
+PHP
+
+Swift
+
+AutoCAD
+
+HTML/CSS
+
+mySQL
+
+Experience
+
+• 04/2025 - 08/2025
+
+Firmware & Software Engineer Intern
+
+Phase Advanced
+
+Worked on an iOS app that communicates with hardware phase sensors over the Apple Lightning
+
+Sensor Systems Corp.
+
+interface using SwiftUI and the ExternalAccessory framework.
+
+Edmonton, Alberta
+
+Helped design a command/response protocol and state machine so the app can safely send
+commands, read sensor status and logs, and recover from connection issues.
+Implemented a binary decoding and calibration pipeline using C++/Swift interoperability to convert
+raw frequency data into calibrated pressure and temperature values with polynomial models.
+Moved the heavy decoding work onto background queues so large sensor logs can be processed
+without freezing the UI.
+Built dashboard-style screens with charts, tables, and configuration pages, and added JSON/CSV
+export so engineers can easily explore and share measurement data.
+
+• 12/2024 - 12/2024
+
+Robot Competition
+
+Sumbot McMaster
+
+Worked closely with a team of 4 members to plan and execute a robotics design and development
+
+University
+
+project.
+
+Hamilton, Ontario
+
+Developed robot functionality using Arduino and C++ programming, including sensor integration
+and control algorithms.
+Facilitated team meetings, fostering communication and collaborative problem-solving.
+
+Partnered with one teammate to write and debug the robot's code using Arduino and C++
+programming, focusing on sensor integration, motor control, and overall system functionality.
+Supported by two teammates who designed robot components, prepared materials, and fabricated
+parts using 3D printing technology.
+
+Education and Training
+
+• Expected in 06/2028 Bachelor of Applied Science in Computer Science
+Hamilton
+
+McMaster University
+Current Grade-point average of 3.6 on a 4.0 scale.
+Relevant course: Engineering Mathematics, Computational Thinking, Computer Architecture,
+Development Basics, Introduction to Software Design Using Web Programming, Data Structures
+and Algorithms, Computer Architecture, Introduction to Software Development, Logical Reasoning
+for Computer Science, Automata and Computability, Concurrent Systems, Algorithms and Software
+Design and Databases.
+
+Languages
+English:
+Advanced
+
+C1
+
+Chinese (Mandarin):
+Native/ Bilingual
+
+A1
+
+
