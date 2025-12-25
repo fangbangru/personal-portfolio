@@ -27,7 +27,7 @@ export default function About() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              I'm a second-year Computer Science student at{' '}
+              I&apos;m a second-year Computer Science student at{' '}
               <span className="text-white font-semibold">McMaster University</span> with a strong
               foundation in programming and software design. Currently maintaining a{' '}
               <span className="text-white font-semibold">3.6 GPA</span> while pursuing my
