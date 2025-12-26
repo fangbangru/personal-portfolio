@@ -96,7 +96,7 @@ export default function Skills() {
             {skillCategories.map((category, index) => (
               <motion.div
                 key={index}
-                className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 p-6 rounded-xl border border-gray-800"
+                className="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 p-6 rounded-xl border border-gray-800 overflow-hidden hover:border-blue-500/50 transition-all duration-500"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={
                   isInView
@@ -104,21 +104,27 @@ export default function Skills() {
                     : { opacity: 0, scale: 0.9 }
                 }
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ scale: 1.05, borderColor: '#ffffff' }}
+                whileHover={{ scale: 1.05, y: -5 }}
               >
-                <h3 className="text-xl font-bold text-white mb-4">
+                {/* Gradient overlay on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative z-10">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full" />
                   {category.title}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, i) => (
                     <motion.span
                       key={i}
-                      className="px-3 py-1 bg-gray-800/50 text-gray-300 text-sm rounded-full hover:bg-gray-700 transition-colors cursor-default"
-                      whileHover={{ scale: 1.1 }}
+                      className="px-3 py-1.5 bg-gray-800/50 text-gray-300 text-sm rounded-lg hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-cyan-500/20 hover:text-white hover:border-blue-400/30 border border-transparent transition-all cursor-default"
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       {skill}
                     </motion.span>
                   ))}
+                </div>
                 </div>
               </motion.div>
             ))}

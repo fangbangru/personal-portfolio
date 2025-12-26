@@ -58,29 +58,35 @@ export default function Experience() {
             {experiences.map((exp, index) => (
               <motion.div
                 key={index}
-                className="border-l-2 border-gray-800 pl-8 pb-8"
+                className="group relative border-l-2 border-gray-800 hover:border-blue-500 pl-8 pb-12 transition-colors duration-500"
                 initial={{ opacity: 0, x: -50 }}
                 animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
-                whileHover={{ borderColor: '#ffffff' }}
               >
+                {/* Timeline dot */}
+                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-800 border-4 border-[#0a0a0a] group-hover:bg-blue-500 group-hover:scale-125 transition-all duration-300" />
+                
+                {/* Content card */}
+                <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 p-6 rounded-xl border border-gray-800 group-hover:border-blue-500/30 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-blue-500/10">
                 <div className="mb-4">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-gradient-blue transition-all duration-300">
                     {exp.role}
                   </h3>
                   <div className="flex flex-col md:flex-row md:items-center md:space-x-4 text-gray-400">
-                    <span className="text-lg font-semibold">{exp.company}</span>
-                    <span className="text-sm font-mono">{exp.period}</span>
+                    <span className="text-lg font-semibold text-blue-400">{exp.company}</span>
+                    <span className="hidden md:inline text-gray-600">•</span>
+                    <span className="text-sm font-mono text-gray-500">{exp.period}</span>
                   </div>
                 </div>
-                <ul className="space-y-2 text-gray-400">
+                <ul className="space-y-3 text-gray-400">
                   {exp.description.map((desc, i) => (
-                    <li key={i} className="flex items-start">
-                      <span className="mr-2 text-white">▹</span>
-                      <span>{desc}</span>
+                    <li key={i} className="flex items-start group/item">
+                      <span className="mr-3 mt-1.5 text-blue-400 group-hover/item:text-cyan-400 transition-colors">▹</span>
+                      <span className="leading-relaxed group-hover/item:text-gray-300 transition-colors">{desc}</span>
                     </li>
                   ))}
                 </ul>
+                </div>
               </motion.div>
             ))}
           </div>

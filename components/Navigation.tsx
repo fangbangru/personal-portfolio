@@ -28,7 +28,7 @@ export default function Navigation() {
     <>
       <motion.nav
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          scrolled ? 'bg-black/80 backdrop-blur-md' : 'bg-transparent'
+          scrolled ? 'bg-black/60 backdrop-blur-xl border-b border-gray-800/50 shadow-lg shadow-black/10' : 'bg-transparent'
         }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -36,8 +36,8 @@ export default function Navigation() {
       >
         <div className="container mx-auto px-6 py-6">
           <div className="flex justify-between items-center">
-            <a href="#" className="text-2xl font-bold">
-              <span className="text-gradient">BF</span>
+            <a href="#" className="text-2xl font-bold group">
+              <span className="text-gradient group-hover:text-glow transition-all duration-300">BF</span>
             </a>
 
             {/* Desktop Menu */}
@@ -46,13 +46,14 @@ export default function Navigation() {
                 <motion.a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                  className="relative text-gray-400 hover:text-white transition-colors duration-300 group"
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   whileHover={{ scale: 1.1 }}
                 >
                   {item.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300" />
                 </motion.a>
               ))}
             </div>

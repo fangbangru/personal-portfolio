@@ -21,7 +21,7 @@ export default function About() {
             about
           </h2>
 
-          <div className="space-y-6 text-lg md:text-xl text-gray-400 leading-relaxed">
+          <div className="space-y-6 text-lg md:text-xl text-gray-400 leading-relaxed max-w-4xl">
             <motion.p
               initial={{ opacity: 0, x: -50 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
